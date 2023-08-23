@@ -143,8 +143,13 @@
   background: #000;
   color: #fff;
   padding: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
 }
-
+.SignSubmit {
+  color: #fff;
+}
 .noaccount {
   color: #858585;
   text-align: center;

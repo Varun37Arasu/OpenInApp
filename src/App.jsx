@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Signup from "./components/Signup/signup";
+import Signup from "./components/Signup/Signup";
 import Dashboard from "./components/Dashboard/Dashboard";
 import { Route, Routes } from "react-router-dom";
 

@@ -61,7 +61,7 @@ const Signup = () => {
               {verified}
             </div>
 
-            <form
+            <div
               id="signup-form"
               className={styles.signup_form}
               action="/dashboard"
@@ -79,15 +79,15 @@ const Signup = () => {
                 {" "}
                 Forgot password?{" "}
               </a>
-              <button className={styles.submit} type="submit">
+              <Link to="/dashboard" className={styles.submit}>
                 <span className={styles.span}>Sign In</span>
-              </button>
-            </form>
+              </Link>
+            </div>
             <p className={styles.noaccount}>
               Don't have an account?{" "}
               <span>
                 <Link
-                  to="/dashboard
+                  to="#
                 "
                 >
                   Register here
