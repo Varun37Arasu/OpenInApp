@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../signup.module.css";
 import Fields from "./Fields";
 // import { GoogleLoginButton } from "react-social-login-buttons";
@@ -9,28 +9,30 @@ import { Link, useNavigate } from "react-router-dom";
 const client_id =
   "723821405767-ji0ev0f7vltr5ki6gohl8uh9ii31n6b8.apps.googleusercontent.com";
 
-const GoogleLoginButton = () => {
-  const button = (
-    <button className={styles.google}>
-      <img src="google.png" alt="" />
-      <p>Sign in with Google</p>
-    </button>
-  );
-
-  return button;
-};
-
 const Signup = () => {
   const [verified, setVerified] = useState(false);
-  const logo = "google.png";
   const navigate = useNavigate();
 
-  if (verified) {
-
-    const handleClick = () => {
+  useEffect(() => {
+    if (verified) {
       navigate("/dashboard");
-    };
-  }
+    }
+  }, [verified]);
+
+  //   const handleClick = () => {
+  //     verified && navigate("/dashboard");
+  //   };
+
+  const GoogleLoginButton = () => {
+    const button = (
+      <button className={styles.google}>
+        <img src="google.png" alt="" />
+        <p>Sign in with Google</p>
+      </button>
+    );
+
+    return button;
+  };
 
   return (
     <>
