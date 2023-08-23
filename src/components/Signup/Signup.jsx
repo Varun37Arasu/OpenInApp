@@ -4,7 +4,7 @@ import Fields from "./Fields";
 // import { GoogleLoginButton } from "react-social-login-buttons";
 import { LoginSocialGoogle } from "reactjs-social-login";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const client_id =
   "723821405767-ji0ev0f7vltr5ki6gohl8uh9ii31n6b8.apps.googleusercontent.com";
@@ -23,9 +23,13 @@ const GoogleLoginButton = () => {
 const Signup = () => {
   const [verified, setVerified] = useState(false);
   const logo = "google.png";
+  const navigate = useNavigate();
 
   if (verified) {
-    window.location.href = "https://open-in-app-three.vercel.app/dashboard";
+
+    const handleClick = () => {
+      navigate("/dashboard");
+    };
   }
 
   return (
