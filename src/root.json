@@ -1,0 +1,20 @@
+{
+  "statistics": {
+    "totalRevenue": 22400,
+    "totalTransaction": 22000,
+    "totalLikes": 2200,
+    "totalUsers": 1920
+  },
+
+  "lineGraph": {
+    "labels": ["Week 1", "Week 2", "Week 3", "Week 4"],
+    "data": [5, 22, 13, 34, 15, 9, 12, 3, 12, 13, 12, 12]
+  },
+
+  "pieChart": {
+    "labels": ["Red", "Blue", "Yellow"],
+    "data": [300, 50, 100],
+    "backgroundColor": ["#FF6384", "#36A2EB", "#FFCE56"],
+    "hoverBackgroundColor": ["#FF6384", "#36A2EB", "#FFCE56"]
+  }
+}
