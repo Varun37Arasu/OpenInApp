@@ -25,7 +25,7 @@ const Signup = () => {
   const logo = "google.png";
 
   if (verified) {
-    window.location.href = "/dashboard";
+    window.location.href = "https://open-in-app-three.vercel.app/dashboard";
   }
 
   return (

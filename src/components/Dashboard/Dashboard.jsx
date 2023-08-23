@@ -3,11 +3,7 @@ import {
   FaRegCalendar,
   FaRegSun,
   FaRegUserCircle,
-  FaTags,
-  FaMoneyCheck,
-  FaRegBell,
-  FaThumbsUp,
-  FaUsers,
+  FaTags
 } from "react-icons/fa";
 import { FiPieChart } from "react-icons/fi";
 import SideBarLinks from "./SideBarLinks";
