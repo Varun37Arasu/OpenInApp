@@ -7,7 +7,7 @@ import { LoginSocialGoogle } from "reactjs-social-login";
 import { Link, useNavigate } from "react-router-dom";
 
 const client_id =
-  "723821405767-ji0ev0f7vltr5ki6gohl8uh9ii31n6b8.apps.googleusercontent.com";
+  "471955671458-4gjph0v9sjarh9dutho6dc61sq13dnu8.apps.googleusercontent.com";
 
 const Signup = () => {
   const [verified, setVerified] = useState(false);
